@@ -1,274 +1,261 @@
 * {
-  box-sizing:border-box;
-  
-}
-
-/* variables */
-:root {
-  --carbon: #343434;
-  --sun: #DAA520;
-  --light: #fff;
-  --dark:#000;
-  --mustard:#b79d08;
-  --army:#8A9A5B;
-  --deep: purple;
-
-}
-/* makes the scroll-down smoother when pressing a link in the nav bar */
-html {
-  scroll-behavior: smooth;
-}
-
-/* trying to make <h1> wrap better */
-h1 {
-  text-wrap:pretty;
-}
-
-
-/* body element. In this case it contains an image that cover the whole page as background and the font family fot the text inside of it. */
-body {
-  background-image:url(https://i.pinimg.com/originals/5e/ce/60/5ece605c968549196e482e868ca9943e.jpg) ;
-  margin: 0;
-  font-family:Verdana, Geneva, Tahoma, sans-serif
-}
-
-  /*navegation bar, where by clicking user will be directed to the respective link/section on same page  */
-nav {
- display: flex;
- flex-direction: row;
- background-color:var(--sun);
- position:relative; 
- justify-content:end;
- border-style:inset;
- border-width: 8px;
- border-color: var(--deep);
+    box-sizing: border-box;
+ }
  
-}
+ :root {
+    --carbon:#343434;
+    --light:#fff;
+    --dark:#000;
+    --sun:#FFD700;
+    --deep:purple;
+ }
 
-/* addressing the anchor tags inside the nav bar to give them style */
-nav a {
-  font-size: 150%;
-  color: var(--carbon);
-  padding: 14px 20px;
-  text-decoration:none;
-  font-weight:bolder;
+ html {
+    scroll-behavior:smooth;
     
-}
-
-/* makes the text background and text xolor change when the cursor hovers over them */
-nav a:hover {
-  background-color: var(--carbon);
-  color: var(--light);
-}
-
-/* a section id named "section-0". Contains the styling and the background image fro the "Abput me:" in  the portfolio  */
-#section-0 {
-  width:50%;
-  border: 15px;
-  border-style:double;
-  display: flex;
-  flex-wrap:wrap;
-  flex-direction: row;
-  background-image:url(https://i.pinimg.com/originals/ca/c1/65/cac16543759744f1bc4fb11298803480.jpg);
-  border-color: var(--dark);
-  justify-content: space-around;
-  margin: 15px auto;
-  min-width: min-content;
-}
-
-/* addresses the styling of my picture in the "About me:" section of the Portfolio */
-#section-0 img {
-  border-radius: 50%;
-  margin-top: 10px;;
-}
-    
-
-/* addresses and styles the text inside the <h1> in the "About me:" */
-#section-0 h1 {
-  justify-content: space-between;
-  flex-direction: row;
-  font-weight:bolder;
-  color:var(--dark);
-  font-size:120%;
-  background-color:var(--army) ;
-}
-
-/* a div that contains the "projects" banner thatseparates the "About me:" section from the main  */
-div {
-  display: flex;
-  flex-wrap: wrap;
-  flex:1;
-  background-color:var(--carbon);
-  color: var(--mustard);
-  padding: 0;
-  width: 45%; 
-  font-size: 135%;
-  margin: 25px auto;
-  justify-content: center;
-  flex-shrink: 1;
-  border-style: solid;
-  border-width:8px;
-  border-color:var(--deep)
+ }
   
-}
+ body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0 auto;
+    background: url(https://wallpaperaccess.com/full/2205322.jpg); 
+    
+    
+ }
+  
+ nav {
+    display: flex;
+    padding:4px; 
+    flex-wrap: wrap; 
+    flex-direction:row;
+    background-color: var(--sun);
+    justify-content: end;
+    border-width: 12px;
+    border-style:inset;
+    border-color: var(--carbon);
+    
+ }
+  
+ nav a {
+    padding:0px 20px;  
+    justify-content:end;
+    text-decoration: none;
+    color: var(--carbon);
+    font-weight: bolder;
+    font-size:150%;
 
-/* makes the text background and text color change when the cursor hovers over them.*/
-div h1:hover {
-  background-color: var(--sun);
-  color: var(--carbon);
-}
+   
+ }
+  
+ nav a:hover {
+    background-color:var(--carbon);
+    color:var(--sun)
+ }
 
-/* an id named main which both serves as a link to the nav bar and also contains attributes to style the elements it contains */
-#main {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  color: none; 
-  justify-content:space-around;
+  
+
+ div {
+    background-color:var(--sun);
+    width:20%;
+    margin: 0 auto;  
+    margin-bottom: 30px;
+    text-align: center;
+    border-style: none;
+    border-width: 8px;
+    border-color: var(--deep);
+    height:10%;
+    min-width: min-content; 
+ }
  
-}
-
-
-/* an id named footer which both serves as a link to the nav bar and also contains attributes to style the elements it contains */
-footer {
-  display:flex;
-  justify-content: center;
-  padding:100px;
-  text-align: center;
-  flex-direction: column;
-  background-image:url(https://i.pinimg.com/originals/ca/c1/65/cac16543759744f1bc4fb11298803480.jpg);
-  border-style:inset;
-  border-width: 8px;
-  border-color: var(--deep);
-
-}
-
-
-footer h1 + p {
-  font-weight:bolder;
-  text-decoration:none;
-}
-
-
-/* addresses the <h1> tag inside the footer element */
-footer h1{
-  font-size: 200%;
-  color:var(--deep);
-  background-color:var(--mustard);
-  
-
-
-}
-
-/* addresses the <p> tag inside the footer element */
-footer p {
-  font-size: 125%;
-  color:var(--dark);
-  font-weight:bolder;
-  
-  
-}
-
-
-/* addresses the <a> tag inside the footer element */
-footer a {
-  display:flex;
-  justify-content:center;
-  font-weight:bolder;
-  font-size: 150%;
-  text-decoration:none;
-  color: var(--dark);
-  
-}
-
-/* makes the text background and text color inside the <a> tag change when the cursor hovers over them.*/
-footer a:hover {
-  background-color: var(--sun);
-  color: var(--deep);
-}
-
-/* header class that addresses the header element at the start of the html index file*/
-.header {
-  display: flex;
-  flex-wrap: wrap;
-  background-image: url(https://2.bp.blogspot.com/-UDLzg11r0mc/UA2kaLhoTvI/AAAAAAAAB4g/dM_aJZxr-84/s1600/Seamless+black+white+marble+tile+pattern+texture.jpg);
-  border-style:hidden;
-  min-width: min-content;
-  width:100%;
-  
-}
-
-/* addressed the image inside the header element */
-.header img {
-  margin-top: 10px;
-  margin-bottom:10px;
-}
-
-/* addresses the <h1> tag inside the header elemet */
-.header h1 {
-  margin-left: 30px;
-  background:var(--carbon);
-  color:var(--light);
-  
-}
-
-/* a class named card that establishes the styling of the images inside each child section element inside main  */
-.card{
-  flex-direction:row;
-  border-style:groove;
-  border-width: 8px;
-  border-color:var(--mustard);;
-  margin: 25px auto;
-  flex-grow: 0;
-  background-color:var(--carbon);
-  text-align: center;
-  color: var(--light);
-  text-rendering: optimizeLegibility;
-  height: max-content;
-  
-
-
-}
-/* establishes the width of every image inside the card class  */
-.card img{
-    width: 100%;
-}
-
-
-
-@media screen and (max-width: 768px) {
-  #section-0{
-    background:var(--dark);
-    border-color:var(--mustard)
-  }
-
-  #main {
-    flex-direction: column;
-  }
-
-  div {
-    background-color:var(--deep);
-    color: var(--light);
-    border-style: solid;
-    border-color:var(--carbon)
-  }
-
-  .card{
-    border-style:solid;
+ div h1{
+    font-size: 200%;
     
-  }
+ }
+  
+ div :hover {
+    background: var(--carbon);
+    color:var(--sun);
 
-  footer{
+ }
+
+ 
+ #section-0 {
+    background: url(https://i.pinimg.com/736x/44/c3/27/44c327b37222ab86d1e32b814dce03ef.jpg);
+    flex-wrap: wrap;
+    margin:0 auto;
+    margin-top:25px;
+    margin-bottom:25px;
+    min-width:min-content;
+    /* max-width:fit-content; */
+    text-align: center; 
+    width:30%;;
+    border-style: double;
+    border-width: 15px;
+    
+ }
+
+ #section-0 img {
+    border-radius: 50%;
+    margin-top:15px;
+    
+
+ }
+
+ #section-0 h1 {
+    font-size: 150%;
+    outline-style:solid var(--light);
+ }
+
+ #section-0 h1:hover {
+    background:var(--deep);
+    color:var(--sun);
+ }
+
+ #main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    width:75%;
+    margin:0 auto;
+    margin-bottom: 25px;
+    background-color:transparent;
+    align-items: flex-end; 
+    
+ }
+
+ #footer {
+    /* display:flex; */
+    /* flex-wrap:wrap; */
     flex-direction:column;
-    background:var(--army);
-    border-style: solid;
-    border-color:var(--deep);
-  }
-  .header {
-    background:var(--deep)
-  }
-  
-}
+    padding: 20px;
+    text-align: center;
+    background: url(https://bgfons.com/uploads/industrial/industrial_texture689.jpg);
+    
+ } 
 
+ #footer h1 {
+    font-size: 225%;
+    color:var(--light);
+    
+
+ }
+
+ #footer a {
+    font-size: 150%;
+    justify-content:space-between;
+    font-weight: bolder;
+    color:var(--light);
+    text-decoration:none;
+    
+    
+ }
+
+ #footer a:hover {
+    background-color:var(--deep);
+    color:var(--sun);
+ }
+
+ #footer a:active {
+    background-color:var(--sun);
+    color:var(--deep);
+ }
+
+
+ .header {
+    display:flex; 
+    text-align: center;
+    background: url(https://2.bp.blogspot.com/-UDLzg11r0mc/UA2kaLhoTvI/AAAAAAAAB4g/dM_aJZxr-84/s1600/Seamless+black+white+marble+tile+pattern+texture.jpg);
+    width:100%;
+    min-width:fit-content;
+ }
+
+
+ .header img {
+    flex-wrap:wrap;
+    margin: 30px 20px;
+ }
+
+
+ .header h1 {
+    font-size:200%;
+    background-color: var(--carbon);
+    color:var(--light);
+    text-align: left;
+    
+ }
+
+
+ .card{
+    margin-top:25px;
+    min-width:min-content;
+    flex-direction: row;
+    margin-left:10px;
+    
+ }
+
+ .card img {
+    width:100%;
+    justify-content: space-evenly;
+    border-style: groove;
+    border-color:var(--sun);
+    border-width: 10px;
+    margin-bottom:35px;
+ }
+
+ .card header {
+  text-align: center;
+  background-color:var(--deep);
+  font-weight:bolder;
+  justify-content: center;
+  width:45%;
+  color:var(--sun);
+  
+ }
+
+ .card header:hover {
+    background-color:var(--sun);
+    color:var(--deep)
+ }
+  
+
+  
+ @media screen and (max-width: 675px) {
+    .header {
+      background:var(--deep);
+      width:100%;
+      font-size:100%;
+
+    }
+    div{
+        background:var(--deep);
+        color:var(--sun);
+        border-style:double;
+        
+        border-color:var(--sun)
+    }
+
+    nav a:hover {
+        background-color:var(--carbon);
+        color:var(--sun);
+     }
+
+    #section-0{
+        background:var(--carbon);
+        color:var(--light);
+        border-style:solid;
+        border-width:9px;
+        border-color:var(--sun);
+        font-size:85%;
+    }
+    .card img {
+        border-style:solid;
+        border-color:var(--sun);
+    }
+ 
+ }
+
+ 
+  
+ 
+  
